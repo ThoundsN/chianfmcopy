@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        width: 600px;
+        padding: 10px;
+      }
+      button {
+        width: 100%;
+        padding: 8px;
+        margin: 5px 0;
+        cursor: pointer;
+      }
+      #dataDisplay {
+        margin: 10px 0;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        max-height: 400px;
+        overflow-y: auto;
+        font-family: monospace;
+      }
+      .item {
+        display: flex;
+        padding: 4px;
+        border-bottom: 1px solid #eee;
+      }
+      .address {
+        color: #666;
+        margin-right: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="extractBtn">Extract Data</button>
+    <div id="dataDisplay"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Data Extractor",
+  "version": "1.0",
+  "description": "Extracts and copies data from specific HTML content",
+  "permissions": ["activeTab", "clipboardWrite", "tabs", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://chian.fm/*", "*://*.chian.fm/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
